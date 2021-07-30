@@ -27,4 +27,18 @@ public class isUniqueTest {
         Assert.assertFalse(uniqueObject.getIsUnique(PALABRA3));
         Assert.assertFalse(uniqueObject.getIsUnique(PALABRA6));
     }
+
+    @Test
+    public void testIsUniqueFors() {
+        var uniqueObject = new isUnique();
+        Assert.assertTrue(uniqueObject.getIsUniqueTwoFors(PALABRA1));
+        Assert.assertTrue(uniqueObject.getIsUniqueTwoFors(PALABRA4));
+        Assert.assertTrue(uniqueObject.getIsUniqueTwoFors(PALABRA5));
+        Assert.assertTrue(uniqueObject.getIsUniqueTwoFors(PALABRA7));
+        Assert.assertTrue(uniqueObject.getIsUniqueTwoFors(PALABRA8));
+
+        Assert.assertFalse(uniqueObject.getIsUniqueTwoFors(PALABRA2));
+        Assert.assertFalse(uniqueObject.getIsUniqueTwoFors(PALABRA3));
+        Assert.assertFalse(uniqueObject.getIsUniqueTwoFors(PALABRA6));
+    }
 }
