@@ -26,8 +26,6 @@ public class isUniqueTest {
         Assert.assertFalse(uniqueObject.getIsUnique(PALABRA2));
         Assert.assertFalse(uniqueObject.getIsUnique(PALABRA3));
         Assert.assertFalse(uniqueObject.getIsUnique(PALABRA6));
-
-
     }
 
     @Test
