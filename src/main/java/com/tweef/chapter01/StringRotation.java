@@ -8,6 +8,11 @@ public class StringRotation {
      * @return
      */
     public static boolean isRotation(String s1, String s2) {
+        if (s1.length() == 0 && s2.length() == 0) {
+            return false;
+        } else if (s1.length() != s2.length()) {
+            return false;
+        }
         String temp = s2 + s2;
         return temp.contains(s1);
     }
